@@ -1102,15 +1102,18 @@ body {
     }
 
     .event-poster {
-        width: 100%;
-        max-width: 320px;
-        margin: 0 auto;
+        flex: none;
+        align-self: center;
+        width: min(100%, 22rem);
+        max-width: 100%;
+        margin-inline: auto;
     }
 
     .event-poster img {
         width: 100%;
         height: auto;
-        max-height: none;
+        max-height: min(65svh, 42rem);
+        object-fit: contain;
     }
 
     .event-info {
