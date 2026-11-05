@@ -1,0 +1,904 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+
+body { 
+    margin: 0; 
+    padding: 0; 
+    font-family: Arial, sans-serif; 
+    background: #380101; 
+    scroll-behavior: smooth;
+}   
+
+.navbar{
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #250104b3;
+    color: rgba(89, 3, 17, 0.715);
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+    height: 60px;
+}   
+.logo{
+    margin-top: 10px;
+    height: 80px;
+    width: auto; 
+    display: block;
+    margin-right: auto;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li{
+    margin-left: 1rem;
+    padding: 0 15px;
+}
+
+.nav-links a{
+    color: rgb(215, 180, 7);
+    text-decoration: solid; 
+    font-size: 30px;
+    transition: color 0.3s;
+    font-family: "Fugaz One", sans-serif;
+    cursor: pointer;
+}
+
+.nav-links a:hover{
+    color: rgb(114, 4, 4);
+}
+
+.heading1{
+   font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+ font-size: 100px;
+    color: rgb(247, 255, 247);
+    margin-bottom: 20px;    
+    text-shadow: 10px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.stars{
+    color: rgb(201, 167, 18);
+}
+
+.heading{
+     font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.subheading{
+    font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(247, 177, 13);
+  margin-bottom: 20px;
+  margin-left: auto;    
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    color: rgb(203, 177, 10);   
+
+    background-image: url(./poze/background.png); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    box-shadow: inset 0 30px 30px rgba(45, 3, 3, 0.8), inset 0 -30px 30px rgba(0, 0, 0, 0.8);
+}
+.text1{
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    font-size: clamp(1.1rem, 2.5vw, 1.875rem);
+    margin-bottom: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: justify;
+    line-height: 1.4;
+
+}
+
+.content{
+ display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    text-align: center;
+    color: rgb(203, 177, 10);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.btn1{
+  display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    padding: 17px 25px;
+
+    background: #630303d3;
+    color: #bd9f07;
+
+    border-radius: 15px;
+    text-decoration: none;
+
+    font-family: "DynaPuff", system-ui;
+    font-size: 23px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.btn1:hover{
+    background: #6c0a03;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(215,180,7,0.25);
+}   
+
+.btn1:active{
+    transform: scale(0.95);
+    box-shadow: 0 1px 5px rgba(89, 2, 2, 0.5);
+}
+
+.btn1:focus{
+    outline: none;
+}
+
+
+/* ABOUT SECTION */
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 90vh;
+    width: 100%;
+
+    padding: 6rem 3rem;
+    box-sizing: border-box;
+
+    box-shadow:
+        inset 0 30px 30px rgba(0,0,0,0.8),
+        inset 0 -30px 30px rgba(0,0,0,0.8);
+}
+
+.about-container {
+    width: 100%;
+    max-width: 1100px;
+}
+
+
+/* TITLU */
+
+.about-title {
+    margin-top: 10px;
+    font-family: "Fugaz One", sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+
+    color: rgb(247, 177, 13);
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.about-intro {
+    max-width: 800px;
+    margin: 0 auto 55px;
+
+    color: #f4e7ce;
+    font-family: Cambria, Georgia, serif;
+    font-size: 21px;
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+
+/* CATEGORII */
+
+.spotlight-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    width: 100%;
+}
+
+
+/* CARD */
+
+.spotlight-card {
+    width: 100%;
+    box-sizing: border-box;
+
+    background: linear-gradient(
+        110deg,
+        rgba(91, 13, 20, 0.9),
+        rgba(49, 5, 10, 0.95)
+    );
+
+    border: 1px solid rgba(215, 180, 7, 0.5);
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    transition: all 0.3s ease;
+}
+
+.spotlight-card:nth-child(even) {
+    background: linear-gradient(
+        110deg,
+        rgba(49, 5, 10, 0.95),
+        rgba(91, 13, 20, 0.9)
+    );
+}
+
+.spotlight-card:hover {
+    border-color: rgb(215, 180, 7);
+
+    box-shadow:
+        0 5px 25px rgba(215, 180, 7, 0.15);
+}
+
+
+/* HEADER CLICKABIL */
+
+.spotlight-card summary {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    padding: 35px 40px;
+
+    cursor: pointer;
+    list-style: none;
+}
+
+.spotlight-card summary::-webkit-details-marker {
+    display: none;
+}
+
+
+/* ICONURI */
+
+.spotlight-icon {
+    width: 90px;
+    height: 90px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(215, 180, 7, 0.12);
+    border: 1px solid rgba(215, 180, 7, 0.4);
+
+    border-radius: 50%;
+
+    color: #F7B10D;
+    font-size: 35px;
+
+    transition: all 0.3s ease;
+}
+
+.spotlight-card:hover .spotlight-icon {
+    background: rgba(215, 180, 7, 0.22);
+
+    box-shadow:
+        0 0 22px rgba(215, 180, 7, 0.25);
+
+    transform: scale(1.08);
+}
+
+
+/* TITLURI CATEGORII */
+
+.spotlight-title {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.spotlight-title strong {
+    font-family: "Fugaz One", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+
+    color: rgb(247, 177, 13);
+}
+
+.spotlight-title small {
+    font-family: Cambria, Georgia, serif;
+    font-size: 18px;
+
+    color: #E9D9B0;
+}
+
+
+/* SAGETEA */
+
+.arrow {
+    color: #D7B407;
+    font-size: 25px;
+
+    transition: transform 0.3s ease;
+}
+
+.spotlight-card[open] .arrow {
+    transform: rotate(180deg);
+}
+
+
+/* TEXTUL EXTINS */
+
+.spotlight-content {
+    padding: 0 45px 40px 160px;
+
+    animation: appear 0.3s ease;
+}
+
+.spotlight-content p {
+    font-family: Cambria, Georgia, serif;
+
+    color: rgb(223, 163, 9);
+
+    font-size: 19px;
+    line-height: 1.7;
+
+    text-align: justify;
+
+    margin: 0;
+}
+
+
+/* ANIMATIE */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* RESPONSIVE - TELEFOANE */
+
+@media (max-width: 700px) {
+
+    .about {
+        padding: 4rem 1rem;
+    }
+
+    .about-intro {
+        font-size: 17px;
+        margin-bottom: 35px;
+    }
+
+    .spotlight-grid {
+        gap: 18px;
+    }
+
+    .spotlight-card summary {
+        padding: 22px 18px;
+        gap: 15px;
+    }
+
+    .spotlight-icon {
+        width: 65px;
+        height: 65px;
+
+        font-size: 26px;
+    }
+
+    .spotlight-title strong {
+        font-size: 18px;
+    }
+
+    .spotlight-title small {
+        font-size: 13px;
+    }
+
+    .arrow {
+        font-size: 20px;
+    }
+
+    .spotlight-content {
+        padding: 0 22px 25px;
+    }
+
+    .spotlight-content p {
+        font-size: 16px;
+        text-align: left;
+    }
+}
+
+
+
+/* EVENTS SECTION */
+
+.events {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    padding: 6rem 3rem;
+    box-sizing: border-box;
+
+     background-image: url(./poze/background.png); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+        min-height: 100vh;
+    padding: 80px 3rem 40px;
+    box-sizing: border-box;
+
+    box-shadow: inset 0 30px 30px rgba(0, 0, 0, 0.949), inset 0 -30px 30px rgba(0, 0, 0, 0.8);
+}
+
+.events-container {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.events-title {
+    margin-top: 10px;
+    font-family: "Fugaz One", sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: rgb(247, 177, 13);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.events-intro {
+     margin-bottom: 25px;
+    max-width: 800px;
+    margin: 0 auto 55px;
+    color: #f4e7ce;
+    font-family: Cambria, Georgia, serif;
+    font-size: 21px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* SLIDER CARD */
+
+.event-slider {
+     padding: 20px 30px;
+    width: 100%;
+    background: linear-gradient(
+        120deg,
+        #4b1015,
+        #2b0509
+    );
+
+    border: 1px solid rgba(215, 180, 7, 0.5);
+    border-radius: 22px;
+
+    padding: 35px;
+    box-sizing: border-box;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+}
+
+/* SLIDE */
+
+.event-slide {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* POSTER */
+
+.event-poster {
+    flex: 0 0 42%;
+    max-width: 42%;
+
+    padding: 10px;
+    background: #f4e7ce;
+    border-radius: 10px;
+
+    max-height: 65vh;
+    width: 100%;
+    object-fit: contain;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.4),
+        0 0 25px rgba(215,180,7,0.12);
+}
+
+.event-poster img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 650px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+/* EVENT INFORMATION */
+
+.event-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.event-label {
+    display: inline-block;
+    color: #380101;
+    background: #D7B407;
+
+    font-family: "Fugaz One", sans-serif;
+    font-size: 13px;
+
+    padding: 8px 14px;
+    border-radius: 5px;
+
+    margin-bottom: 20px;
+}
+
+.event-info h3 {
+    font-family: "Fugaz One", sans-serif;
+    font-size: clamp(25px, 3vw, 38px);
+    color: #F7B10D;
+    margin: 0 0 20px;
+}
+
+.event-description {
+    font-family: Cambria, Georgia, serif;
+    font-size: 19px;
+    line-height: 1.6;
+    color: #f4e7ce;
+     margin-bottom: 20px;
+
+    margin: 0 0 30px;
+}
+
+/* DETAILS */
+
+.event-details {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 35px;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.event-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+
+    font-family: Cambria, Georgia, serif;
+    font-size: 17px;
+    line-height: 1.4;
+    color: #f4e7ce;
+}
+
+.event-detail i {
+    color: #F7B10D;
+    font-size: 20px;
+    width: 22px;
+    flex-shrink: 0;
+}
+
+/* REGISTER BUTTON */
+
+.event-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    padding: 17px 25px;
+
+    background: #D7B407;
+    color: #380101;
+
+    border-radius: 8px;
+    text-decoration: none;
+
+    font-family: "DynaPuff", system-ui;
+    font-size: 17px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.event-button:hover {
+    background: #F7B10D;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(215,180,7,0.25);
+}
+
+/* NAVIGATION */
+
+.event-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+    margin-top: 35px;
+}
+
+.slider-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+    border: 1px solid #D7B407;
+
+    background: transparent;
+    color: #F7B10D;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.slider-arrow:hover {
+    background: #D7B407;
+    color: #380101;
+}
+
+.event-dots {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.event-dot {
+    width: 10px;
+    height: 10px;
+
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+
+    background: #9A7777;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.event-dot.active {
+    width: 25px;
+    border-radius: 10px;
+    background: #F7B10D;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 750px) {
+
+    .events {
+        padding: 75px 1rem 30px;
+    }
+
+    .events-intro {
+        font-size: 17px;
+        margin-bottom: 35px;
+    }
+
+    .event-slider {
+         padding: 15px;
+    }
+
+    .event-slide {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .event-poster {
+        flex: none;
+        width: 100%;
+        max-width: 380px;
+        box-sizing: border-box;
+    }
+
+    .event-poster img {
+        max-height: 45vh;   
+    }
+
+    .event-info {
+        width: 100%;
+    }
+
+    .event-info h3 {
+        font-size: 27px;
+    }
+
+    .event-description {
+        font-size: 17px;
+    }
+
+    .event-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .event-navigation {
+        margin-top: 25px;
+    }
+}
+
+
+.event-slide {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+
+    transform: translateX(35px);
+
+    transition:
+        opacity 0.5s ease,
+        transform 0.5s ease,
+        visibility 0.5s;
+}
+
+.event-slide.active {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    transform: translateX(0);
+}
+
+.event-slider {
+    position: relative;
+}
+
+
+
+.next-event {
+    font-family: "Fugaz One", sans-serif;
+    font-size: 30px;
+    color: #F7B10D;
+    text-align: center;
+}
+
+.event-slider {
+    overflow: hidden;
+}
+
+.event-slide {
+    box-sizing: border-box;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    padding: 6rem 3rem;
+    box-sizing: border-box;
+
+     background-image: url(./poze/background.png); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+              min-height: 100vh;
+    padding: 80px 3rem 40px;
+    box-sizing: border-box;
+
+    box-shadow: inset 0 -30px 30px rgba(0, 0, 0, 0.8);
+}
+
+.contact-title {
+    margin-top: 10px;
+    font-family: "Fugaz One", sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: rgb(247, 177, 13);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-description {
+    max-width: 800px;
+    margin: 0 auto 55px;
+
+    color: #f4e7ce;
+    font-family: Cambria, Georgia, serif;
+    font-size: 30px;
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+.contact-section {
+    background: #250104;
+    padding: 70px 20px;
+    text-align: center;
+    color: white;
+}
+
+.contact-section h2 {
+    font-family: 'Fugaz One', sans-serif;
+    color: #d7b407;
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 260px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+    line-height: 1.4;
+}
+
+.social-links i {
+    color: #d7b407;
+    font-size: 25px;
+    width: 30px;
+}
+
+.social-links a:hover {
+    color: #d7b407;
+    transform: translateX(5px);
+}

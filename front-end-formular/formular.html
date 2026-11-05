@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Înscriere CSIE's Got Talent</title>
+  <link rel="stylesheet" href="formular.css">
+</head>
+<body>
+
+<div class="formular-inscriere">
+  <h2>Înscrie-te la CSIE's Got Talent</h2>
+  <p>6 decembrie, ora 18:00, Casa de Cultură a Studenților din București. Înscrieri până pe 22 noiembrie.</p>
+
+  <form id="formular">
+    <label for="nume">Nume și prenume</label>
+    <input type="text" id="nume" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" required>
+
+    <label for="telefon">Telefon (opțional)</label>
+    <input type="tel" id="telefon">
+
+    <label for="talent">Talentul tău</label>
+    <select id="talent" required>
+      <option value="">Alege talentul</option>
+      <option>Muzică</option>
+      <option>Dans</option>
+      <option>Actorie</option>
+      <option>Stand-up comedy</option>
+      <option>Alt talent</option>
+    </select>
+
+    <label for="mesaj">Descrie-ne numărul</label>
+    <textarea id="mesaj" rows="4" required></textarea>
+
+    <label for="durata">Cât durează numărul?</label>
+    <select id="durata" required>
+      <option value="">Alege durata</option>
+      <option>Sub 3 minute</option>
+      <option>3-5 minute</option>
+      <option>5-7 minute</option>
+    </select>
+
+    <label for="tehnic">De ce ai nevoie pe scenă? (opțional)</label>
+    <input type="text" id="tehnic" placeholder="Microfon, boxe, chitară...">
+
+    <button type="submit">Trimite înscrierea</button>
+    <p id="raspuns"></p>
+  </form>
+</div>
+
+<script src="formular.js"></script>
+</body>
+</html>
