@@ -67,8 +67,7 @@ body {
     "EHLT" 12;
  font-size: 100px;
     color: rgb(247, 255, 247);
-    margin-bottom: 20px;    
-    text-shadow: 10px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
 }
 .stars{
     color: rgb(201, 167, 18);
@@ -1206,3 +1205,4 @@ body {
     }
 
 }
+
