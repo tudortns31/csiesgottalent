@@ -902,3 +902,307 @@ body {
     color: #d7b407;
     transform: translateX(5px);
 }
+
+
+@media (min-width: 992px) {
+
+    .navbar {
+        height: auto;
+        min-height: 75px;
+        padding: 5px 25px;
+    }
+
+    .logo {
+        height: 65px;
+        width: auto;
+        margin-top: 0;
+    }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .nav-links li {
+        margin-left: 5px;
+        padding: 0 8px;
+    }
+
+    .nav-links a {
+        font-size: clamp(18px, 1.8vw, 25px);
+        white-space: nowrap;
+    }
+}
+
+
+@media (max-width: 991.98px) {
+
+    .navbar {
+        height: auto;
+        min-height: 65px;
+        padding: 5px 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar .container-fluid {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0;
+    }
+
+    .navbar-brand {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        height: 48px;
+        width: auto;
+        margin: 0;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+        padding: 6px 10px;
+        border: 1px solid #d7b407;
+    }
+
+    .navbar-collapse {
+        flex-basis: 100%;
+        width: 100%;
+        margin-top: 10px;
+        background: #250104;
+        border-top: 1px solid rgba(215, 180, 7, 0.3);
+        border-radius: 0 0 10px 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 12px 10px;
+        font-size: 20px;
+        white-space: normal;
+    }
+
+    .nav-links a:hover {
+        color: #fff;
+        background: rgba(215, 180, 7, 0.1);
+    }
+}
+
+
+@media (max-width: 768px) {
+
+
+    .home {
+        min-height: 90vh;
+        background-attachment: scroll;
+        background-position: center;
+        padding: 30px 15px;
+    }
+
+    .content {
+        min-height: 75vh;
+        padding: 20px 10px;
+    }
+
+    .heading1 {
+        font-size: clamp(35px, 9vw, 55px);
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .subheading {
+        font-size: 21px;
+        margin: 0 0 20px;
+    }
+
+    .btn1 {
+        font-size: 17px;
+        padding: 13px 20px;
+    }
+
+
+
+    .about {
+        padding: 65px 15px;
+    }
+
+    .about-title {
+        font-size: 35px;
+    }
+
+    .spotlight-card summary {
+        padding: 20px 15px;
+        gap: 12px;
+    }
+
+    .spotlight-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 23px;
+    }
+
+    .spotlight-title strong {
+        font-size: 17px;
+    }
+
+    .spotlight-title small {
+        font-size: 13px;
+    }
+
+    .spotlight-content {
+        padding: 0 18px 22px;
+    }
+
+    .spotlight-content p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+
+
+    .events {
+        padding: 65px 12px 35px;
+        background-attachment: scroll;
+    }
+
+    .events-title {
+        font-size: 35px;
+    }
+
+    .event-slider {
+        padding: 15px;
+    }
+
+    .event-slide {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .event-poster {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .event-poster img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+    }
+
+    .event-info {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .event-info h3 {
+        font-size: 25px;
+    }
+
+    .event-description {
+        font-size: 16px;
+    }
+
+    .event-detail {
+        font-size: 15px;
+    }
+
+    .event-button {
+        width: 100%;
+        padding: 14px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+
+    /* CONTACT */
+
+    .contact-section {
+        padding: 55px 15px;
+    }
+
+    .contact-title,
+    .contact-section h2 {
+        font-size: 32px;
+    }
+
+    .contact-description {
+        font-size: 19px;
+        margin-bottom: 30px;
+    }
+
+    .social-links {
+        gap: 18px;
+    }
+
+    .social-links a {
+        width: 100%;
+        max-width: 260px;
+        font-size: 17px;
+        justify-content: flex-start;
+    }
+
+}
+
+
+
+@media (max-width: 400px) {
+
+    .heading1 {
+        font-size: 34px;
+    }
+
+    .subheading {
+        font-size: 18px;
+    }
+
+    .spotlight-card summary {
+        gap: 9px;
+        padding: 17px 10px;
+    }
+
+    .spotlight-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 19px;
+    }
+
+    .spotlight-title strong {
+        font-size: 15px;
+    }
+
+    .spotlight-title small {
+        font-size: 12px;
+    }
+
+    .arrow {
+        font-size: 17px;
+    }
+
+    .event-slider {
+        padding: 10px;
+    }
+
+}
