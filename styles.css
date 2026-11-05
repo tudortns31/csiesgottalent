@@ -68,6 +68,7 @@ body {
  font-size: 100px;
     color: rgb(247, 255, 247);
     margin-bottom: 20px;
+    text-shadow: 10px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .stars{
     color: rgb(201, 167, 18);
@@ -1206,3 +1207,12 @@ body {
 
 }
 
+.heading1 {
+    color: #F7B10D !important;
+    -webkit-text-fill-color: #F7B10D;
+}
+
+.heading1 span {
+    color: #F7B10D !important;
+    -webkit-text-fill-color: #F7B10D;
+}
