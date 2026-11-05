@@ -58,10 +58,11 @@ body {
 }
 
 .heading1{
-   font-family: "Nabla", system-ui;
-  font-optical-sizing: auto;
+  font-family: "Boldonse", system-ui;
   font-weight: 400;
   font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-variation-settings:
     "EDPT" 100,
     "EHLT" 12;
