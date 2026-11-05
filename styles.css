@@ -1029,7 +1029,7 @@ body {
 
     .heading1 {
         font-size: clamp(35px, 9vw, 55px);
-        line-height: 1.2;
+        line-height: clamp(1.35, calc(1.2 + 0.5vw), 1.5);
         margin-bottom: 15px;
     }
 
@@ -1173,6 +1173,7 @@ body {
 
     .heading1 {
         font-size: 34px;
+        line-height: 1.5;
     }
 
     .subheading {
